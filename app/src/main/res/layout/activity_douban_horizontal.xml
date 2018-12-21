@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".doubanhorizontal.DoubanHorizontalActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.dzzchao.learncustomview.doubanhorizontal.HorizontalScrollView
+            android:id="@+id/scroll_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </android.support.v7.widget.RecyclerView>
+
+
+            <com.dzzchao.learncustomview.doubanhorizontal.VerticalTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignTop="@+id/recycler"
+                android:layout_alignBottom="@+id/recycler"
+                android:layout_marginEnd="-65dp"
+                android:layout_toEndOf="@+id/recycler"
+                android:drawableStart="@drawable/left_arrow"
+                android:gravity="center"
+                android:paddingStart="15dp"
+                android:paddingEnd="20dp"
+                android:textSize="13sp">
+
+            </com.dzzchao.learncustomview.doubanhorizontal.VerticalTextView>
+
+
+        </com.dzzchao.learncustomview.doubanhorizontal.HorizontalScrollView>
+
+
+    </FrameLayout>
+
+</android.support.constraint.ConstraintLayout>
