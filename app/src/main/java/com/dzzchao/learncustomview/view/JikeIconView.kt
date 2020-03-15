@@ -140,7 +140,7 @@ class JikeIconView @JvmOverloads constructor(
     }
 
     private fun setLikeBitmap(scale: Float) {
-        val matrix = Matrix()
+        val matrix = matrix
         matrix.postScale(scale, scale)
         bitmapLike = BitmapFactory.decodeResource(resources, R.drawable.ic_messages_like_selected)
         bitmapLike = Bitmap.createBitmap(bitmapLike, 0, 0,
