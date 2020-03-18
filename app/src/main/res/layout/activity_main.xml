@@ -20,5 +20,10 @@
         android:onClick="jikeLike"
         android:text="即刻点赞" />
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="MaterialText"
+        android:text="MaterialText" />
 
 </LinearLayout>

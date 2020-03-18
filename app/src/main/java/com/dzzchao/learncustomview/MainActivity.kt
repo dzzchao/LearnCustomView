@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.view.View
 import com.dzzchao.learncustomview.doubanhorizontal.DoubanHorizontalActivity
 import com.dzzchao.learncustomview.ui.JikeLikeActivity
+import com.dzzchao.learncustomview.ui.MaterialTextActivity
 
 class MainActivity : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -24,5 +25,10 @@ class MainActivity : BaseActivity() {
     fun jikeLike(view: View) {
         startActivity(Intent(this, JikeLikeActivity::class.java))
     }
+
+    fun MaterialText(view: View) {
+        startActivity(Intent(this, MaterialTextActivity::class.java))
+    }
+
 
 }

@@ -5,8 +5,8 @@ import android.content.res.Resources
 import android.graphics.Canvas
 import android.util.AttributeSet
 import android.util.TypedValue
-import android.view.ViewGroup
 import android.widget.LinearLayout
+import com.dzzchao.learncustomview.App
 import com.dzzchao.learncustomview.R
 
 /**
@@ -70,23 +70,23 @@ class JikeLikeView @JvmOverloads constructor(
     override fun onDraw(canvas: Canvas?) {
 
     }
+}
 
 
-    private fun Int.dp2px(): Float {
+fun Int.dp2px(): Float {
 //        val scale = Resources.getSystem().displayMetrics.density
 //        return this * scale + 0.5F
-        return TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP,
-                this.toFloat(),
-                resources.displayMetrics)
-    }
+    return TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP,
+            this.toFloat(),
+            App.aContext.resources.displayMetrics)
+}
 
-    private fun Int.px2dp(): Float {
-        val scale = Resources.getSystem().displayMetrics.density
-        return this * scale + 0.5F
-    }
+fun Int.px2dp(): Float {
+    val scale = App.aContext.resources.displayMetrics.density
+    return this * scale + 0.5F
+}
 
-    private fun Int.sp2px(): Float {
-        val fontScale = context.resources.displayMetrics.scaledDensity
-        return this * fontScale + 0.5f
-    }
+fun Int.sp2px(): Float {
+    val fontScale = App.aContext.resources.displayMetrics.scaledDensity
+    return this * fontScale + 0.5f
 }
